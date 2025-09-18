@@ -1,0 +1,33 @@
+/* Basic styling for Week 6 Assignment */
+:root {
+  --bg: #f7f8fb;
+  --text: #222;
+  --muted: #596273;
+  --card: #ffffff;
+  --line: #e2e5ec;
+  --brand: #2a66f8;
+  --radius: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; }
+
+.site-header { padding: var(--space-5); text-align: center; }
+.container { max-width: 900px; margin: 0 auto; padding: 0 var(--space-4) var(--space-5); display: grid; gap: var(--space-5); }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: var(--space-5); }
+
+label { display: block; margin-bottom: 12px; }
+input { width: 100%; padding: 8px; margin-top: 4px; border: 1px solid var(--line); border-radius: 6px; }
+button { background: var(--brand); color: #fff; border: 0; padding: 8px 12px; border-radius: 6px; cursor: pointer; }
+button:hover { filter: brightness(1.05); }
+
+.counter-controls { display: flex; align-items: center; gap: 12px; margin-top: 12px; }
+#count { font-size: 1.2rem; font-weight: bold; }
+
+/* Dark theme */
+.dark { background: #0f1220; color: #e6e9f5; }
+.dark .card { background: #171a2b; border-color: #2a2f4a; }
+.dark button { background: #4c63ff; }
